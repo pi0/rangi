@@ -12,6 +12,8 @@ import cssVariables from "./css-variables.ts";
 import dark from "./dark.ts";
 import defaultTheme from "./default.ts";
 import dracula from "./dracula.ts";
+import elysiaDark from "./elysia-dark.ts";
+import elysiaLight from "./elysia-light.ts";
 import everforestDark from "./everforest-dark.ts";
 import everforestLight from "./everforest-light.ts";
 import geistDark from "./geist-dark.ts";
@@ -41,6 +43,8 @@ export {
   dark,
   defaultTheme,
   dracula,
+  elysiaDark,
+  elysiaLight,
   everforestDark,
   everforestLight,
   geistDark,
@@ -78,6 +82,9 @@ export const catppuccin: ShjThemePair = {
   light: catppuccinLatte,
   dark: catppuccinMocha,
 };
+
+/** The two Elysia themes as one light/dark pair, {@link geist}-style */
+export const elysia: ShjThemePair = { light: elysiaLight, dark: elysiaDark };
 
 /** The two Everforest themes as one light/dark pair, {@link geist}-style */
 export const everforest: ShjThemePair = {
@@ -121,6 +128,8 @@ export type ShjThemeName =
   | "dark"
   | "default"
   | "dracula"
+  | "elysia-dark"
+  | "elysia-light"
   | "everforest-dark"
   | "everforest-light"
   | "geist-dark"
