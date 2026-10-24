@@ -23,6 +23,8 @@ const NAMES: ShjThemeName[] = [
   "dark",
   "default",
   "dracula",
+  "elysia-dark",
+  "elysia-light",
   "everforest-dark",
   "everforest-light",
   "geist-dark",
